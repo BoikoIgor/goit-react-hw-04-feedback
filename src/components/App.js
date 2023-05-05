@@ -81,7 +81,7 @@ export const App = () => {
           options={Object.keys({ good, neutral, bad })}
         />
       </Section>
-      {countPositiveFeedbackPercentage() > 0 ? (
+      {good + neutral + bad > 0 ? (
         <Section title="Statistics">
           <Statistics
             good={good}
